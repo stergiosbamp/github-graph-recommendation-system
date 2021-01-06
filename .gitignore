@@ -1,0 +1,20 @@
+# Python virtual environment
+env/
+venv/
+
+# IDE configs
+.idea/
+.vscode/
+
+# Python cache files
+__pycache__
+*.pyc
+
+# Pyenv
+.python-version
+
+# Data collections
+data/*.json
+
+# Pickle files
+*.pkl
