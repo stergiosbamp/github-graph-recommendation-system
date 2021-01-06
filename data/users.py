@@ -21,11 +21,12 @@ with open("repos.json", "r") as fp:
     seed_repos = json.load(fp)
 
 for repo in seed_repos:
-    print("Getting stargazers for repo: {}".format(repo))
 
     users = []
     fullname = repo["full_name"]
     url = base_endpoint_start + fullname + base_endpoint_end
+
+    print("Getting stargazers for repo: {}".format(fullname))
 
     for page in range(1, 401):
         params = {
@@ -51,6 +52,6 @@ for repo in seed_repos:
             filtered_user["id"] = user["id"]
             users.append(filtered_user)
     
-    filename = fullname.replace('/', '--') + ".json"
+    filename = "stargazers/" + fullname.replace('/', '--') + ".json"
     with open(filename, "w") as fp:
         json.dump(users, fp, indent=4)
