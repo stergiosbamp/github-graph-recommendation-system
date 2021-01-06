@@ -13,9 +13,6 @@ __pycache__
 # Pyenv
 .python-version
 
-# Data collections
-data/*.json
-
 # Pickle files
 *.pkl
 

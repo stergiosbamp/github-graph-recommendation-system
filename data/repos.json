@@ -1,0 +1,1252 @@
+[
+    {
+        "id": 33015583,
+        "full_name": "keras-team/keras",
+        "stargazers_count": 50450
+    },
+    {
+        "id": 843222,
+        "full_name": "scikit-learn/scikit-learn",
+        "stargazers_count": 43630
+    },
+    {
+        "id": 83844720,
+        "full_name": "ageitgey/face_recognition",
+        "stargazers_count": 38014
+    },
+    {
+        "id": 114747226,
+        "full_name": "deepfakes/faceswap",
+        "stargazers_count": 33811
+    },
+    {
+        "id": 29749635,
+        "full_name": "donnemartin/data-science-ipython-notebooks",
+        "stargazers_count": 20021
+    },
+    {
+        "id": 101138315,
+        "full_name": "d2l-ai/d2l-zh",
+        "stargazers_count": 19640
+    },
+    {
+        "id": 80990461,
+        "full_name": "eriklindernoren/ML-From-Scratch",
+        "stargazers_count": 18702
+    },
+    {
+        "id": 21467110,
+        "full_name": "explosion/spaCy",
+        "stargazers_count": 17957
+    },
+    {
+        "id": 138331573,
+        "full_name": "sebastianruder/NLP-progress",
+        "stargazers_count": 17559
+    },
+    {
+        "id": 71932349,
+        "full_name": "ray-project/ray",
+        "stargazers_count": 14325
+    },
+    {
+        "id": 65711522,
+        "full_name": "PaddlePaddle/Paddle",
+        "stargazers_count": 13744
+    },
+    {
+        "id": 204086862,
+        "full_name": "streamlit/streamlit",
+        "stargazers_count": 12428
+    },
+    {
+        "id": 1349775,
+        "full_name": "RaRe-Technologies/gensim",
+        "stargazers_count": 11558
+    },
+    {
+        "id": 178626720,
+        "full_name": "PyTorchLightning/pytorch-lightning",
+        "stargazers_count": 11277
+    },
+    {
+        "id": 94460704,
+        "full_name": "tensorflow/tensor2tensor",
+        "stargazers_count": 10767
+    },
+    {
+        "id": 24561828,
+        "full_name": "gunthercox/ChatterBot",
+        "stargazers_count": 10691
+    },
+    {
+        "id": 99846383,
+        "full_name": "horovod/horovod",
+        "stargazers_count": 10657
+    },
+    {
+        "id": 38900806,
+        "full_name": "aleju/imgaug",
+        "stargazers_count": 10496
+    },
+    {
+        "id": 70908208,
+        "full_name": "RasaHQ/rasa",
+        "stargazers_count": 10474
+    },
+    {
+        "id": 72945141,
+        "full_name": "chiphuyen/stanford-tensorflow-tutorials",
+        "stargazers_count": 9824
+    },
+    {
+        "id": 88285322,
+        "full_name": "hindupuravinash/the-gan-zoo",
+        "stargazers_count": 9817
+    },
+    {
+        "id": 136914524,
+        "full_name": "flairNLP/flair",
+        "stargazers_count": 9764
+    },
+    {
+        "id": 247266215,
+        "full_name": "JaidedAI/EasyOCR",
+        "stargazers_count": 9721
+    },
+    {
+        "id": 299862,
+        "full_name": "nltk/nltk",
+        "stargazers_count": 9530
+    },
+    {
+        "id": 55147386,
+        "full_name": "tflearn/tflearn",
+        "stargazers_count": 9498
+    },
+    {
+        "id": 179893494,
+        "full_name": "ddbourgin/numpy-ml",
+        "stargazers_count": 9321
+    },
+    {
+        "id": 149430917,
+        "full_name": "microsoft/recommenders",
+        "stargazers_count": 8933
+    },
+    {
+        "id": 44104712,
+        "full_name": "donnemartin/awesome-aws",
+        "stargazers_count": 8799
+    },
+    {
+        "id": 59944455,
+        "full_name": "MorvanZhou/tutorials",
+        "stargazers_count": 8766
+    },
+    {
+        "id": 157198623,
+        "full_name": "hanxiao/bert-as-service",
+        "stargazers_count": 8729
+    },
+    {
+        "id": 87067212,
+        "full_name": "deepmind/sonnet",
+        "stargazers_count": 8693
+    },
+    {
+        "id": 101399935,
+        "full_name": "zalandoresearch/fashion-mnist",
+        "stargazers_count": 8683
+    },
+    {
+        "id": 135673451,
+        "full_name": "microsoft/nni",
+        "stargazers_count": 8639
+    },
+    {
+        "id": 152166877,
+        "full_name": "d2l-ai/d2l-en",
+        "stargazers_count": 8405
+    },
+    {
+        "id": 70036319,
+        "full_name": "rushter/MLAlgorithms",
+        "stargazers_count": 8282
+    },
+    {
+        "id": 136202695,
+        "full_name": "mlflow/mlflow",
+        "stargazers_count": 8111
+    },
+    {
+        "id": 73328905,
+        "full_name": "pytorch/vision",
+        "stargazers_count": 8074
+    },
+    {
+        "id": 1696822,
+        "full_name": "clips/pattern",
+        "stargazers_count": 7739
+    },
+    {
+        "id": 45495679,
+        "full_name": "EpistasisLab/tpot",
+        "stargazers_count": 7727
+    },
+    {
+        "id": 111340129,
+        "full_name": "keras-team/autokeras",
+        "stargazers_count": 7673
+    },
+    {
+        "id": 163346054,
+        "full_name": "ludwig-ai/ludwig",
+        "stargazers_count": 7405
+    },
+    {
+        "id": 83286964,
+        "full_name": "Yorko/mlcourse.ai",
+        "stargazers_count": 7371
+    },
+    {
+        "id": 68619379,
+        "full_name": "bbfamily/abu",
+        "stargazers_count": 7178
+    },
+    {
+        "id": 98336690,
+        "full_name": "deepmind/pysc2",
+        "stargazers_count": 7139
+    },
+    {
+        "id": 83878269,
+        "full_name": "iterative/dvc",
+        "stargazers_count": 7002
+    },
+    {
+        "id": 136265021,
+        "full_name": "albumentations-team/albumentations",
+        "stargazers_count": 6986
+    },
+    {
+        "id": 94218531,
+        "full_name": "lanpa/tensorboardX",
+        "stargazers_count": 6743
+    },
+    {
+        "id": 94506832,
+        "full_name": "pyro-ppl/pyro",
+        "stargazers_count": 6668
+    },
+    {
+        "id": 170777132,
+        "full_name": "instillai/machine-learning-course",
+        "stargazers_count": 6580
+    },
+    {
+        "id": 75829600,
+        "full_name": "wiseodd/generative-models",
+        "stargazers_count": 6383
+    },
+    {
+        "id": 70746484,
+        "full_name": "apache/tvm",
+        "stargazers_count": 6142
+    },
+    {
+        "id": 62535969,
+        "full_name": "Hironsan/BossSensor",
+        "stargazers_count": 5998
+    },
+    {
+        "id": 90433420,
+        "full_name": "MorvanZhou/Reinforcement-learning-with-tensorflow",
+        "stargazers_count": 5988
+    },
+    {
+        "id": 48593532,
+        "full_name": "tensorpack/tensorpack",
+        "stargazers_count": 5878
+    },
+    {
+        "id": 88444621,
+        "full_name": "SerpentAI/SerpentAI",
+        "stargazers_count": 5799
+    },
+    {
+        "id": 22489033,
+        "full_name": "lazyprogrammer/machine_learning_examples",
+        "stargazers_count": 5769
+    },
+    {
+        "id": 65791375,
+        "full_name": "thtrieu/darkflow",
+        "stargazers_count": 5757
+    },
+    {
+        "id": 125932201,
+        "full_name": "OlafenwaMoses/ImageAI",
+        "stargazers_count": 5676
+    },
+    {
+        "id": 222183074,
+        "full_name": "jackzhenguo/python-small-examples",
+        "stargazers_count": 5614
+    },
+    {
+        "id": 24528468,
+        "full_name": "vaexio/vaex",
+        "stargazers_count": 5559
+    },
+    {
+        "id": 36914478,
+        "full_name": "chainer/chainer",
+        "stargazers_count": 5512
+    },
+    {
+        "id": 213020264,
+        "full_name": "google/trax",
+        "stargazers_count": 5502
+    },
+    {
+        "id": 40242771,
+        "full_name": "rushter/data-science-blogs",
+        "stargazers_count": 5350
+    },
+    {
+        "id": 179728393,
+        "full_name": "microsoft/nlp-recipes",
+        "stargazers_count": 5328
+    },
+    {
+        "id": 102908804,
+        "full_name": "alteryx/featuretools",
+        "stargazers_count": 5312
+    },
+    {
+        "id": 57182702,
+        "full_name": "aymericdamien/TopDeepLearning",
+        "stargazers_count": 5124
+    },
+    {
+        "id": 104854615,
+        "full_name": "stanfordnlp/stanza",
+        "stargazers_count": 5071
+    },
+    {
+        "id": 23011147,
+        "full_name": "scikit-learn-contrib/imbalanced-learn",
+        "stargazers_count": 4938
+    },
+    {
+        "id": 111113343,
+        "full_name": "deepmipt/DeepPavlov",
+        "stargazers_count": 4921
+    },
+    {
+        "id": 62458409,
+        "full_name": "keras-rl/keras-rl",
+        "stargazers_count": 4909
+    },
+    {
+        "id": 77629496,
+        "full_name": "humphd/have-fun-with-machine-learning",
+        "stargazers_count": 4888
+    },
+    {
+        "id": 68254498,
+        "full_name": "cleverhans-lab/cleverhans",
+        "stargazers_count": 4875
+    },
+    {
+        "id": 101052455,
+        "full_name": "likedan/Awesome-CoreML-Models",
+        "stargazers_count": 4856
+    },
+    {
+        "id": 122696125,
+        "full_name": "wb14123/seq2seq-couplet",
+        "stargazers_count": 4812
+    },
+    {
+        "id": 86115145,
+        "full_name": "astorfi/TensorFlow-World",
+        "stargazers_count": 4508
+    },
+    {
+        "id": 122896249,
+        "full_name": "dmlc/gluon-cv",
+        "stargazers_count": 4443
+    },
+    {
+        "id": 52581991,
+        "full_name": "snorkel-team/snorkel",
+        "stargazers_count": 4386
+    },
+    {
+        "id": 95995403,
+        "full_name": "lmcinnes/umap",
+        "stargazers_count": 4359
+    },
+    {
+        "id": 62087567,
+        "full_name": "okfn-brasil/serenata-de-amor",
+        "stargazers_count": 4213
+    },
+    {
+        "id": 81275248,
+        "full_name": "amdegroot/ssd.pytorch",
+        "stargazers_count": 4097
+    },
+    {
+        "id": 75710587,
+        "full_name": "deepmind/learning-to-learn",
+        "stargazers_count": 4011
+    },
+    {
+        "id": 137905238,
+        "full_name": "SmirkCao/Lihang",
+        "stargazers_count": 4010
+    },
+    {
+        "id": 132709824,
+        "full_name": "doccano/doccano",
+        "stargazers_count": 4009
+    },
+    {
+        "id": 105699750,
+        "full_name": "yzhao062/pyod",
+        "stargazers_count": 3994
+    },
+    {
+        "id": 209120637,
+        "full_name": "Netflix/metaflow",
+        "stargazers_count": 3969
+    },
+    {
+        "id": 90854726,
+        "full_name": "MorvanZhou/Tensorflow-Tutorial",
+        "stargazers_count": 3919
+    },
+    {
+        "id": 235860204,
+        "full_name": "microsoft/DeepSpeed",
+        "stargazers_count": 3881
+    },
+    {
+        "id": 122299416,
+        "full_name": "optuna/optuna",
+        "stargazers_count": 3845
+    },
+    {
+        "id": 97533515,
+        "full_name": "skorch-dev/skorch",
+        "stargazers_count": 3709
+    },
+    {
+        "id": 23389271,
+        "full_name": "tyiannak/pyAudioAnalysis",
+        "stargazers_count": 3664
+    },
+    {
+        "id": 86140645,
+        "full_name": "Jack-Cherish/Machine-Learning",
+        "stargazers_count": 3640
+    },
+    {
+        "id": 79584587,
+        "full_name": "yahoo/TensorFlowOnSpark",
+        "stargazers_count": 3611
+    },
+    {
+        "id": 287463830,
+        "full_name": "microsoft/qlib",
+        "stargazers_count": 3488
+    },
+    {
+        "id": 145693916,
+        "full_name": "kornia/kornia",
+        "stargazers_count": 3481
+    },
+    {
+        "id": 39940111,
+        "full_name": "lyst/lightfm",
+        "stargazers_count": 3445
+    },
+    {
+        "id": 81349068,
+        "full_name": "snipsco/snips-nlu",
+        "stargazers_count": 3427
+    },
+    {
+        "id": 156401841,
+        "full_name": "alan-turing-institute/sktime",
+        "stargazers_count": 3387
+    },
+    {
+        "id": 22937749,
+        "full_name": "rasbt/mlxtend",
+        "stargazers_count": 3270
+    },
+    {
+        "id": 18302786,
+        "full_name": "IDSIA/sacred",
+        "stargazers_count": 3245
+    },
+    {
+        "id": 111835796,
+        "full_name": "pytorch/ignite",
+        "stargazers_count": 3200
+    },
+    {
+        "id": 291703561,
+        "full_name": "alirezamika/autoscraper",
+        "stargazers_count": 3177
+    },
+    {
+        "id": 143328315,
+        "full_name": "mindsdb/mindsdb",
+        "stargazers_count": 3124
+    },
+    {
+        "id": 1832321,
+        "full_name": "HIT-SCIR/ltp",
+        "stargazers_count": 3065
+    },
+    {
+        "id": 59121694,
+        "full_name": "DistrictDataLabs/yellowbrick",
+        "stargazers_count": 3057
+    },
+    {
+        "id": 243454957,
+        "full_name": "MingchaoZhu/DeepLearning",
+        "stargazers_count": 3044
+    },
+    {
+        "id": 65123395,
+        "full_name": "wzhe06/Ad-papers",
+        "stargazers_count": 2909
+    },
+    {
+        "id": 199509705,
+        "full_name": "awslabs/autogluon",
+        "stargazers_count": 2889
+    },
+    {
+        "id": 112654708,
+        "full_name": "easy-tensorflow/easy-tensorflow",
+        "stargazers_count": 2848
+    },
+    {
+        "id": 175274189,
+        "full_name": "podgorskiy/ALAE",
+        "stargazers_count": 2824
+    },
+    {
+        "id": 73519205,
+        "full_name": "raghakot/keras-vis",
+        "stargazers_count": 2773
+    },
+    {
+        "id": 77383688,
+        "full_name": "polyaxon/polyaxon",
+        "stargazers_count": 2686
+    },
+    {
+        "id": 55271222,
+        "full_name": "jisungk/deepjazz",
+        "stargazers_count": 2674
+    },
+    {
+        "id": 124853261,
+        "full_name": "tensorflow/hub",
+        "stargazers_count": 2670
+    },
+    {
+        "id": 167349656,
+        "full_name": "FederatedAI/FATE",
+        "stargazers_count": 2663
+    },
+    {
+        "id": 97159209,
+        "full_name": "TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials",
+        "stargazers_count": 2639
+    },
+    {
+        "id": 78835091,
+        "full_name": "rlcode/reinforcement-learning",
+        "stargazers_count": 2634
+    },
+    {
+        "id": 193652854,
+        "full_name": "bytedance/byteps",
+        "stargazers_count": 2623
+    },
+    {
+        "id": 148221325,
+        "full_name": "tensorflow/datasets",
+        "stargazers_count": 2598
+    },
+    {
+        "id": 217113590,
+        "full_name": "KevinMusgrave/pytorch-metric-learning",
+        "stargazers_count": 2589
+    },
+    {
+        "id": 86031674,
+        "full_name": "wandb/client",
+        "stargazers_count": 2578
+    },
+    {
+        "id": 135584946,
+        "full_name": "microsoft/dowhy",
+        "stargazers_count": 2570
+    },
+    {
+        "id": 8357227,
+        "full_name": "biolab/orange3",
+        "stargazers_count": 2554
+    },
+    {
+        "id": 290879784,
+        "full_name": "nidhaloff/igel",
+        "stargazers_count": 2534
+    },
+    {
+        "id": 159175746,
+        "full_name": "idealo/image-super-resolution",
+        "stargazers_count": 2390
+    },
+    {
+        "id": 95379459,
+        "full_name": "maciejkula/spotlight",
+        "stargazers_count": 2379
+    },
+    {
+        "id": 145385156,
+        "full_name": "catalyst-team/catalyst",
+        "stargazers_count": 2357
+    },
+    {
+        "id": 82193141,
+        "full_name": "tryolabs/luminoth",
+        "stargazers_count": 2330
+    },
+    {
+        "id": 96632503,
+        "full_name": "keithito/tacotron",
+        "stargazers_count": 2327
+    },
+    {
+        "id": 317380990,
+        "full_name": "PeterL1n/BackgroundMattingV2",
+        "stargazers_count": 2325
+    },
+    {
+        "id": 103934044,
+        "full_name": "RasaHQ/rasa_core",
+        "stargazers_count": 2300
+    },
+    {
+        "id": 122758193,
+        "full_name": "k4yt3x/video2x",
+        "stargazers_count": 2281
+    },
+    {
+        "id": 135330566,
+        "full_name": "wzhe06/Reco-papers",
+        "stargazers_count": 2242
+    },
+    {
+        "id": 56417681,
+        "full_name": "benfred/implicit",
+        "stargazers_count": 2208
+    },
+    {
+        "id": 128121076,
+        "full_name": "dmlc/gluon-nlp",
+        "stargazers_count": 2205
+    },
+    {
+        "id": 164046740,
+        "full_name": "ZhaoJ9014/face.evoLVe.PyTorch",
+        "stargazers_count": 2203
+    },
+    {
+        "id": 96111593,
+        "full_name": "huggingface/neuralcoref",
+        "stargazers_count": 2163
+    },
+    {
+        "id": 111751293,
+        "full_name": "google/deepvariant",
+        "stargazers_count": 2152
+    },
+    {
+        "id": 124146367,
+        "full_name": "adambielski/siamese-triplet",
+        "stargazers_count": 2143
+    },
+    {
+        "id": 108459727,
+        "full_name": "google/tangent",
+        "stargazers_count": 2143
+    },
+    {
+        "id": 25311354,
+        "full_name": "explosion/thinc",
+        "stargazers_count": 2141
+    },
+    {
+        "id": 115744122,
+        "full_name": "deepmind/dm_control",
+        "stargazers_count": 2138
+    },
+    {
+        "id": 53717060,
+        "full_name": "samjabrahams/tensorflow-on-raspberry-pi",
+        "stargazers_count": 2112
+    },
+    {
+        "id": 68036822,
+        "full_name": "anfederico/clairvoyant",
+        "stargazers_count": 2111
+    },
+    {
+        "id": 246924744,
+        "full_name": "microsoft/hummingbird",
+        "stargazers_count": 2108
+    },
+    {
+        "id": 170544934,
+        "full_name": "hudson-and-thames/mlfinlab",
+        "stargazers_count": 2105
+    },
+    {
+        "id": 98052177,
+        "full_name": "asyml/texar",
+        "stargazers_count": 2082
+    },
+    {
+        "id": 191126383,
+        "full_name": "allegroai/clearml",
+        "stargazers_count": 2072
+    },
+    {
+        "id": 95862535,
+        "full_name": "apple/coremltools",
+        "stargazers_count": 2067
+    },
+    {
+        "id": 178976529,
+        "full_name": "bentoml/BentoML",
+        "stargazers_count": 2055
+    },
+    {
+        "id": 253535629,
+        "full_name": "jbesomi/texthero",
+        "stargazers_count": 2024
+    },
+    {
+        "id": 88885145,
+        "full_name": "bfortuner/ml-glossary",
+        "stargazers_count": 2004
+    },
+    {
+        "id": 160251929,
+        "full_name": "tensorflow/ranking",
+        "stargazers_count": 2002
+    },
+    {
+        "id": 54340642,
+        "full_name": "scikit-optimize/scikit-optimize",
+        "stargazers_count": 1998
+    },
+    {
+        "id": 166495086,
+        "full_name": "BrikerMan/Kashgari",
+        "stargazers_count": 1985
+    },
+    {
+        "id": 68827685,
+        "full_name": "ajbrock/Neural-Photo-Editor",
+        "stargazers_count": 1984
+    },
+    {
+        "id": 80898688,
+        "full_name": "reiinakano/scikit-plot",
+        "stargazers_count": 1980
+    },
+    {
+        "id": 160543708,
+        "full_name": "mars-project/mars",
+        "stargazers_count": 1969
+    },
+    {
+        "id": 140285687,
+        "full_name": "osmr/imgclsmob",
+        "stargazers_count": 1951
+    },
+    {
+        "id": 176736173,
+        "full_name": "huggingface/knockknock",
+        "stargazers_count": 1941
+    },
+    {
+        "id": 254755757,
+        "full_name": "Palashio/libra",
+        "stargazers_count": 1918
+    },
+    {
+        "id": 122806629,
+        "full_name": "PetrochukM/PyTorch-NLP",
+        "stargazers_count": 1847
+    },
+    {
+        "id": 124381504,
+        "full_name": "Cartucho/mAP",
+        "stargazers_count": 1830
+    },
+    {
+        "id": 63595107,
+        "full_name": "tobegit3hub/tensorflow_template_application",
+        "stargazers_count": 1826
+    },
+    {
+        "id": 240315046,
+        "full_name": "jina-ai/jina",
+        "stargazers_count": 1819
+    },
+    {
+        "id": 82346425,
+        "full_name": "kaonashi-tyc/zi2zi",
+        "stargazers_count": 1804
+    },
+    {
+        "id": 94331757,
+        "full_name": "bethgelab/foolbox",
+        "stargazers_count": 1757
+    },
+    {
+        "id": 293687812,
+        "full_name": "tradytics/eiten",
+        "stargazers_count": 1755
+    },
+    {
+        "id": 181471279,
+        "full_name": "ines/spacy-course",
+        "stargazers_count": 1748
+    },
+    {
+        "id": 165457814,
+        "full_name": "BayesWitnesses/m2cgen",
+        "stargazers_count": 1727
+    },
+    {
+        "id": 165542441,
+        "full_name": "minimaxir/automl-gs",
+        "stargazers_count": 1709
+    },
+    {
+        "id": 129366435,
+        "full_name": "stellargraph/stellargraph",
+        "stargazers_count": 1707
+    },
+    {
+        "id": 136475762,
+        "full_name": "mapbox/robosat",
+        "stargazers_count": 1704
+    },
+    {
+        "id": 186166778,
+        "full_name": "benedekrozemberczki/awesome-decision-tree-papers",
+        "stargazers_count": 1681
+    },
+    {
+        "id": 169457007,
+        "full_name": "microsoft/forecasting",
+        "stargazers_count": 1678
+    },
+    {
+        "id": 68417164,
+        "full_name": "tomlepaine/fast-wavenet",
+        "stargazers_count": 1669
+    },
+    {
+        "id": 182995939,
+        "full_name": "seungeunrho/minimalRL",
+        "stargazers_count": 1663
+    },
+    {
+        "id": 186872119,
+        "full_name": "awslabs/gluon-ts",
+        "stargazers_count": 1651
+    },
+    {
+        "id": 121859737,
+        "full_name": "ThoughtfulDev/EagleEye",
+        "stargazers_count": 1631
+    },
+    {
+        "id": 232876381,
+        "full_name": "lucidrains/stylegan2-pytorch",
+        "stargazers_count": 1594
+    },
+    {
+        "id": 152444880,
+        "full_name": "benedekrozemberczki/awesome-community-detection",
+        "stargazers_count": 1567
+    },
+    {
+        "id": 109277943,
+        "full_name": "gram-ai/capsule-networks",
+        "stargazers_count": 1541
+    },
+    {
+        "id": 195914972,
+        "full_name": "uber/causalml",
+        "stargazers_count": 1532
+    },
+    {
+        "id": 90821710,
+        "full_name": "amir-abdi/keras_to_tensorflow",
+        "stargazers_count": 1529
+    },
+    {
+        "id": 84139294,
+        "full_name": "Franck-Dernoncourt/NeuroNER",
+        "stargazers_count": 1520
+    },
+    {
+        "id": 133574273,
+        "full_name": "bjoernkarmann/project_alias",
+        "stargazers_count": 1516
+    },
+    {
+        "id": 65155092,
+        "full_name": "ClimbsRocks/auto_ml",
+        "stargazers_count": 1512
+    },
+    {
+        "id": 159110178,
+        "full_name": "dragen1860/Deep-Learning-with-PyTorch-Tutorials",
+        "stargazers_count": 1511
+    },
+    {
+        "id": 107602547,
+        "full_name": "instacart/lore",
+        "stargazers_count": 1509
+    },
+    {
+        "id": 108992863,
+        "full_name": "r9y9/deepvoice3_pytorch",
+        "stargazers_count": 1490
+    },
+    {
+        "id": 63827736,
+        "full_name": "JasonKessler/scattertext",
+        "stargazers_count": 1476
+    },
+    {
+        "id": 79976022,
+        "full_name": "keras-team/keras-contrib",
+        "stargazers_count": 1474
+    },
+    {
+        "id": 77541444,
+        "full_name": "kevinhughes27/TensorKart",
+        "stargazers_count": 1473
+    },
+    {
+        "id": 1301584,
+        "full_name": "mne-tools/mne-python",
+        "stargazers_count": 1469
+    },
+    {
+        "id": 116198266,
+        "full_name": "uber-research/deep-neuroevolution",
+        "stargazers_count": 1459
+    },
+    {
+        "id": 58301920,
+        "full_name": "ahangchen/GDLnotes",
+        "stargazers_count": 1443
+    },
+    {
+        "id": 90264407,
+        "full_name": "tslearn-team/tslearn",
+        "stargazers_count": 1434
+    },
+    {
+        "id": 3153959,
+        "full_name": "scikit-learn-contrib/lightning",
+        "stargazers_count": 1418
+    },
+    {
+        "id": 164881995,
+        "full_name": "Accenture/AmpliGraph",
+        "stargazers_count": 1401
+    },
+    {
+        "id": 132975485,
+        "full_name": "cgnorthcutt/cleanlab",
+        "stargazers_count": 1398
+    },
+    {
+        "id": 179265268,
+        "full_name": "visionml/pytracking",
+        "stargazers_count": 1385
+    },
+    {
+        "id": 122715432,
+        "full_name": "plasticityai/magnitude",
+        "stargazers_count": 1374
+    },
+    {
+        "id": 95491035,
+        "full_name": "Hironsan/anago",
+        "stargazers_count": 1372
+    },
+    {
+        "id": 84404972,
+        "full_name": "achillesrasquinha/bulbea",
+        "stargazers_count": 1367
+    },
+    {
+        "id": 49643229,
+        "full_name": "GPflow/GPflow",
+        "stargazers_count": 1358
+    },
+    {
+        "id": 125444399,
+        "full_name": "mbadry1/Top-Deep-Learning",
+        "stargazers_count": 1333
+    },
+    {
+        "id": 81621587,
+        "full_name": "devnag/pytorch-generative-adversarial-networks",
+        "stargazers_count": 1331
+    },
+    {
+        "id": 164282308,
+        "full_name": "aburkov/theMLbook",
+        "stargazers_count": 1323
+    },
+    {
+        "id": 162747292,
+        "full_name": "tensorflow/privacy",
+        "stargazers_count": 1297
+    },
+    {
+        "id": 172931222,
+        "full_name": "nubank/fklearn",
+        "stargazers_count": 1294
+    },
+    {
+        "id": 232901618,
+        "full_name": "lucidrains/reformer-pytorch",
+        "stargazers_count": 1289
+    },
+    {
+        "id": 108945887,
+        "full_name": "yanshengjia/ml-road",
+        "stargazers_count": 1287
+    },
+    {
+        "id": 110621895,
+        "full_name": "aws/sagemaker-python-sdk",
+        "stargazers_count": 1283
+    },
+    {
+        "id": 154288965,
+        "full_name": "google/uis-rnn",
+        "stargazers_count": 1279
+    },
+    {
+        "id": 169116405,
+        "full_name": "tensorflow/tfx",
+        "stargazers_count": 1274
+    },
+    {
+        "id": 76109394,
+        "full_name": "pytorch/tnt",
+        "stargazers_count": 1265
+    },
+    {
+        "id": 84231689,
+        "full_name": "reiinakano/xcessiv",
+        "stargazers_count": 1258
+    },
+    {
+        "id": 167388434,
+        "full_name": "online-ml/river",
+        "stargazers_count": 1254
+    },
+    {
+        "id": 102089807,
+        "full_name": "fendouai/Awesome-TensorFlow-Chinese",
+        "stargazers_count": 1244
+    },
+    {
+        "id": 137086172,
+        "full_name": "idealo/image-quality-assessment",
+        "stargazers_count": 1239
+    },
+    {
+        "id": 90050085,
+        "full_name": "DLTK/DLTK",
+        "stargazers_count": 1232
+    },
+    {
+        "id": 80733109,
+        "full_name": "azavea/raster-vision",
+        "stargazers_count": 1198
+    },
+    {
+        "id": 93023551,
+        "full_name": "kingfengji/gcForest",
+        "stargazers_count": 1187
+    },
+    {
+        "id": 262600128,
+        "full_name": "fbdesignpro/sweetviz",
+        "stargazers_count": 1183
+    },
+    {
+        "id": 145761123,
+        "full_name": "Trusted-AI/AIF360",
+        "stargazers_count": 1182
+    },
+    {
+        "id": 93080181,
+        "full_name": "AxeldeRomblay/MLBox",
+        "stargazers_count": 1173
+    },
+    {
+        "id": 215173055,
+        "full_name": "QData/TextAttack",
+        "stargazers_count": 1168
+    },
+    {
+        "id": 195769741,
+        "full_name": "gnes-ai/gnes",
+        "stargazers_count": 1160
+    },
+    {
+        "id": 159249114,
+        "full_name": "tensorflow/addons",
+        "stargazers_count": 1143
+    },
+    {
+        "id": 21954559,
+        "full_name": "datamade/usaddress",
+        "stargazers_count": 1142
+    },
+    {
+        "id": 97591379,
+        "full_name": "bfelbo/DeepMoji",
+        "stargazers_count": 1142
+    },
+    {
+        "id": 50261113,
+        "full_name": "explosion/sense2vec",
+        "stargazers_count": 1142
+    },
+    {
+        "id": 149640348,
+        "full_name": "torchgan/torchgan",
+        "stargazers_count": 1140
+    },
+    {
+        "id": 151904296,
+        "full_name": "VivekPa/AIAlpha",
+        "stargazers_count": 1137
+    },
+    {
+        "id": 133290200,
+        "full_name": "huoyijie/AdvancedEAST",
+        "stargazers_count": 1114
+    },
+    {
+        "id": 83467664,
+        "full_name": "jfkirk/tensorrec",
+        "stargazers_count": 1113
+    },
+    {
+        "id": 226155948,
+        "full_name": "benedekrozemberczki/karateclub",
+        "stargazers_count": 1110
+    },
+    {
+        "id": 101113923,
+        "full_name": "yangyanli/PointCNN",
+        "stargazers_count": 1096
+    },
+    {
+        "id": 14063354,
+        "full_name": "scikit-learn-contrib/metric-learn",
+        "stargazers_count": 1095
+    },
+    {
+        "id": 56639410,
+        "full_name": "DragonComputer/Dragonfire",
+        "stargazers_count": 1094
+    },
+    {
+        "id": 61916488,
+        "full_name": "HyperGAN/HyperGAN",
+        "stargazers_count": 1087
+    },
+    {
+        "id": 205250704,
+        "full_name": "microsoft/DialoGPT",
+        "stargazers_count": 1087
+    },
+    {
+        "id": 25257051,
+        "full_name": "lensacom/sparkit-learn",
+        "stargazers_count": 1054
+    },
+    {
+        "id": 41820544,
+        "full_name": "databricks/spark-sklearn",
+        "stargazers_count": 1053
+    },
+    {
+        "id": 71516397,
+        "full_name": "Cloud-CV/EvalAI",
+        "stargazers_count": 1041
+    },
+    {
+        "id": 118506495,
+        "full_name": "sepandhaghighi/pycm",
+        "stargazers_count": 1040
+    },
+    {
+        "id": 137539238,
+        "full_name": "uber/petastorm",
+        "stargazers_count": 1037
+    },
+    {
+        "id": 85036321,
+        "full_name": "harvitronix/five-video-classification-methods",
+        "stargazers_count": 1022
+    },
+    {
+        "id": 291425727,
+        "full_name": "tradytics/surpriver",
+        "stargazers_count": 1019
+    },
+    {
+        "id": 261086130,
+        "full_name": "ourownstory/neural_prophet",
+        "stargazers_count": 1011
+    },
+    {
+        "id": 137219689,
+        "full_name": "githubharald/SimpleHTR",
+        "stargazers_count": 1002
+    }
+]
