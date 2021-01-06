@@ -18,17 +18,14 @@ headers = {
 }
 
 with open("repos.json", "r") as fp:
-    seed_repos = json.loads(fp)
+    seed_repos = json.load(fp)
 
 for repo in seed_repos:
+    print("Getting stargazers for repo: {}".format(repo))
 
     users = []
-
     fullname = repo["full_name"]
-
     url = base_endpoint_start + fullname + base_endpoint_end
-
-    flag = True
 
     for page in range(1, 401):
         params = {
@@ -36,8 +33,17 @@ for repo in seed_repos:
             "page": page
         }
     
+        print("\tRequesting page: {}".format(page))
+
         response = requests.get(url, headers=headers, params=params)
+        if response.status_code == 403:
+            print("\tRate limiting error!")
+            exit()
+
         stargazers = json.loads(response.text)
+        if len(stargazers) == 0:
+            print("You reached the end for repo: {} at page: {}".format(repo, page))
+            break
 
         for user in stargazers:
             filtered_user = dict()
@@ -47,4 +53,4 @@ for repo in seed_repos:
     
     filename = fullname.replace('/', '--') + ".json"
     with open(filename, "w") as fp:
-        json.dump(items, fp, indent=4)
+        json.dump(users, fp, indent=4)
