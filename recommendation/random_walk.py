@@ -1,6 +1,8 @@
 import json
 import networkx as nx
 
+from random import choice
+
 
 def build_bipartite_graph(filename):
     print(f"\nBuilding graph...")
@@ -28,6 +30,13 @@ def build_bipartite_graph(filename):
     print(f"Constructed graph is bipartite: {nx.bipartite.is_bipartite(G)}")
 
     return G
+
+
+def random_neighbor(G, node):
+    neighbors = list(G.neighbors(node))
+    randomly_selected_neighbor = choice(neighbors)
+    return randomly_selected_neighbor
+
 
 if __name__ == "__main__":
     G = build_bipartite_graph("../data/repos_users.json")
