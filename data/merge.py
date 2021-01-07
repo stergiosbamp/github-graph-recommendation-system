@@ -36,7 +36,8 @@ for stat in most_common_users:
 
 # Filter out the users based on the top users
 for repo, users in repo_users_mapping.items():
-    filtered_users = set(users).difference(set(top_users))
+    # From all users from the running repo, take the intersection with the top_users.
+    filtered_users = set(users).intersection(set(top_users))
     filtered_users_repos[repo] = list(filtered_users)
 
 
