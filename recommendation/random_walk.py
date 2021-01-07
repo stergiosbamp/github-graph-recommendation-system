@@ -3,6 +3,7 @@ import networkx as nx
 
 from random import choice
 from collections import Counter
+from random import choice, sample
 
 
 def build_bipartite_graph(filename):
@@ -97,6 +98,24 @@ def random_walks(G_reduced, target_user, total_steps, double_steps_per_random_wa
                 print(f"The repo visit counts are {repo_visit_counts}")
             
     return repo_visit_counts
+
+
+def remove_random_edges(G, target_user, portion=10):
+    neighbors = list(G.neighbors(target_user))
+    neighbors_to_remove = sample(neighbors, k=portion)
+
+    for neighbor in neighbors_to_remove:
+        G.remove_edge(target_user, neighbor)
+
+    return neighbors_to_remove
+
+
+def add_edges(G, target_user, edges):
+    edges_to_add = []
+    for edge in edges:
+        edges_to_add.append((target_user, edge))
+
+    G.add_edges_from(edges_to_add)
 
 
 if __name__ == "__main__":
