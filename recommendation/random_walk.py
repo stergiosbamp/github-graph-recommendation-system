@@ -32,6 +32,31 @@ def build_bipartite_graph(filename):
     return G
 
 
+def print_graph_stats(G):
+    # graph metrics
+    print(f"Average clustering coefficient: {nx.average_clustering(G)}")
+    print(f"Transitivity: {nx.transitivity(G)}")
+    print(f"Average shortest path length: {nx.average_shortest_path_length(G)}")
+    print(f"Diameter: {nx.diameter(G)}")
+    print(f"Radius: {nx.radius(G)}")
+    print(f"Number of connected components: {len(list(nx.connected_components(G)))}")
+
+    # take forever to compute, probably not applicable on our graph which is highly connected
+    print(f"Node connectivity: {nx.node_connectivity(G)}")
+    print(f"Minimum node cut: {nx.minimum_node_cut(G)}")
+    print(f"Edge connectivity: {nx.edge_connectivity(G)}")
+    print(f"Minimum node cut: {nx.minimum_edge_cut(G)}")
+
+    # node metrics (also need time to compute)
+    print(f"Degree centrality: {nx.degree_centrality(G)}")
+    print(f"Closeness centrality: {nx.closeness_centrality(G, wf_improved=True)}")
+    print(f"Betweenness centrality: {nx.betweenness_centrality(G, normalized=True, endpoints=False)}")
+    print(f"PageRank: {nx.pagerank(G)}")
+    h, a = nx.hits(G)
+    print(f"Hubs: {h}")
+    print(f"Authorities: {a}")
+
+
 def random_neighbor(G, node):
     neighbors = list(G.neighbors(node))
     randomly_selected_neighbor = choice(neighbors)
