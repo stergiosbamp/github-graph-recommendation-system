@@ -1,7 +1,7 @@
 import json
 import networkx as nx
 
-from random import choice
+from random import choice, sample
 
 
 def build_bipartite_graph(filename):
@@ -77,9 +77,29 @@ def random_walk(G, starting_user, iterations):
     return neighbor
 
 
+def remove_random_edges(G, target_user, portion=10):
+    neighbors = list(G.neighbors(target_user))
+    neighbors_to_remove = sample(neighbors, k=portion)
+
+    for neighbor in neighbors_to_remove:
+        G.remove_edge(target_user, neighbor)
+
+    return neighbors_to_remove
+
+
+def add_edges(G, target_user, edges):
+    edges_to_add = []
+    for edge in edges:
+        edges_to_add.append((target_user, edge))
+
+    G.add_edges_from(edges_to_add)
+
+
 if __name__ == "__main__":
     G = build_bipartite_graph("../data/repos_users.json")
 
     target_user = "walsvid"
+    removed_edges = remove_random_edges(G, target_user)
+
     recommended_repo = random_walk(G, target_user, 10)
     print("For user '{}' is recommended repository: '{}'".format(target_user, recommended_repo))
