@@ -38,5 +38,23 @@ def random_neighbor(G, node):
     return randomly_selected_neighbor
 
 
+def random_walk(G, starting_user, iterations):
+    neighbor = random_neighbor(G, starting_user)
+    print("Starting random from user", neighbor)
+
+    for i in range(iterations):
+        neighbor = random_neighbor(G, neighbor)
+        if i % 2 == 0:
+            print("Walker is now at user", neighbor)
+        else:
+            print("Walker is now at repo", neighbor)
+
+    return neighbor
+
+
 if __name__ == "__main__":
     G = build_bipartite_graph("../data/repos_users.json")
+
+    target_user = "walsvid"
+    recommended_repo = random_walk(G, target_user, 10)
+    print("For user '{}' is recommended repository: '{}'".format(target_user, recommended_repo))
