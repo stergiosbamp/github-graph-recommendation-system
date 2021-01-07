@@ -67,7 +67,7 @@ def random_neighbor(G, node):
 
 def random_walks(G_reduced, target_user, random_walks_per_repo, double_steps_per_random_walk, verbose=False):
     seed_repos = list(G_reduced.neighbors(target_user))
-    print(f"\n\n\nStarting random walks for target user: {target_user}")
+    #print(f"\n\n\nStarting random walks for target user: {target_user}")
 
     repo_visit_counts = Counter()
     for seed_repo in seed_repos:
