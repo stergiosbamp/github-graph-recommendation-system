@@ -72,10 +72,9 @@ def random_walks(G_reduced, target_user, total_steps, double_steps_per_random_wa
     if random_walks_per_repo == 0:
         raise(ValueError("Increase total_steps or decrease double_steps_per_random_walk."))
 
-    if verbose:
-        print(f"\n\n\nStarting random walks for target user: {target_user}")
-        print(f"The seed repos of the user are: {len(seed_repos)}")
-        print(f"The number of random walks per repo will be: {random_walks_per_repo}")
+    print(f"\n\n\nStarting random walks for target user: {target_user}")
+    print(f"The seed repos of the user are: {len(seed_repos)}")
+    print(f"The number of random walks per repo will be: {random_walks_per_repo}")
 
     repo_visit_counts = Counter()
     for seed_repo in seed_repos:
@@ -118,10 +117,30 @@ def add_edges(G, target_user, edges):
     G.add_edges_from(edges_to_add)
 
 
+def evaluate(G, target_user, portion, topk, total_steps, double_steps_per_random_walk):
+    removed_neighbors = remove_random_edges(G, target_user, portion=portion)
+    repo_visit_counts = random_walks(G, target_user, total_steps=total_steps, double_steps_per_random_walk=double_steps_per_random_walk)
+    add_edges(G, target_user, removed_neighbors)
+    topk_repos = [repo for repo, count in repo_visit_counts.most_common(topk)]
+    correct = set(topk_repos).intersection(set(removed_neighbors))
+    return len(correct)
+
+
 if __name__ == "__main__":
     G = build_bipartite_graph("../data/repos_users.json")
 
-    target_user = "walsvid"
-    repo_visit_counts = random_walks(G, target_user, total_steps=2000, double_steps_per_random_walk=3)
-    topk = 5
-    print(f"\n\nThe top-5 recommended repos for user {target_user} are: {repo_visit_counts.most_common(topk)}")
+    target_users = ["gaomingweig",
+        "izdi",
+        "data-catalysis",
+        "compassz",
+        "michalwols"]
+
+    portion = 10
+    topk = 30
+
+    n_correct = 0
+    for user in target_users:
+        n_correct += evaluate(G, user, portion=portion, topk=topk, total_steps=2000, double_steps_per_random_walk=2)
+
+    print(f"\n\nPrecision @ {topk}: {n_correct / (topk * len(target_users)):.3f}")
+    print(f"Recall: @ {topk}: {n_correct/ (portion * len(target_users)):.3f}")
