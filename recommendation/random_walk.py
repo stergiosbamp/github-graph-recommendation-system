@@ -96,6 +96,7 @@ def remove_random_edges(G, target_user, portion=10):
     neighbors = set(G.neighbors(target_user))
     removed_neighbors = sample(neighbors, k=portion)
     remaining_neighbors = neighbors.difference(set(removed_neighbors))
+    remaining_neighbors = list(remaining_neighbors)
 
     for neighbor in removed_neighbors:
         G.remove_edge(target_user, neighbor)
