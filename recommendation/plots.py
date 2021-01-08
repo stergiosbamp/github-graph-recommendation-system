@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import networkx as nx
 
 
 def plot_performance_vs_random_walk_parameters():
@@ -51,19 +52,36 @@ def plot_performance_vs_random_walk_parameters():
 def plot_performance_vs_top_k():
     top_k_s = [10, 20, 30, 40]
 
-    precisions = [0.1138, 0.1037, 0.097, 0.0932]
-    recalls = [0.1138, 0.2073, 0.2930, 0.3730]
+    prec_3000 = [0.1890, 0.1547, 0.1323, 0.1191]
+    rec_3000 = [0.1890, 0.3093, 0.3970, 0.4765]
 
+    prec_6000 = [0.1620, 0.1413, 0.1227, 0.1128]
+    rec_6000 = [0.1620, 0.2827, 0.3682, 0.4510]
+
+    prec_9000 = [0.1550, 0.1345, 0.1173, 0.1048]
+    rec_9000 = [0.1550, 0.2690, 0.3518, 0.4192]
+
+    # Precision plot for all three graphs
     plt.figure()
-
-    plt.plot(top_k_s, precisions)  # precision
-    plt.plot(top_k_s, recalls)  # recall
+    plt.plot(top_k_s, prec_3000)
+    plt.plot(top_k_s, prec_6000)
+    plt.plot(top_k_s, prec_9000)
 
     plt.xlabel("Top-K queries")
-    plt.ylabel("Performance @ K")
-
+    plt.ylabel("Precision @ K")
     plt.xticks(top_k_s)
-    plt.legend(["Precision for top-K", "Recall for top-K"])
+    plt.legend(["3000 stargazers", "6000 stargazers", "9000 stargazers"])
+
+    # Recall plot for all three graphs
+    plt.figure()
+    plt.plot(top_k_s, rec_3000)
+    plt.plot(top_k_s, rec_6000)
+    plt.plot(top_k_s, rec_9000)
+
+    plt.xlabel("Top-K queries")
+    plt.ylabel("Recall @ K")
+    plt.xticks(top_k_s)
+    plt.legend(["3000 stargazers", "6000 stargazers", "9000 stargazers"])
 
     plt.show()
 
@@ -89,7 +107,7 @@ def plot_degree_distribution(G):
     plt.ylabel("Numner of user nodes")
     plt.yscale("log")
     plt.legend(["Graph size: 3000 users"])
-    
+
     plt.show()
 
 
