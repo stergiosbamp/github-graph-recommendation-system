@@ -68,6 +68,31 @@ def plot_performance_vs_top_k():
     plt.show()
 
 
+def plot_degree_distribution(G):
+    repos, users = nx.bipartite.sets(G)
+
+    repo_degrees = [G.degree(repo_node) for repo_node in repos]
+    user_degrees = [G.degree(user_node) for user_node in users]
+
+    # plot degree distribution for repos
+    plt.figure()
+    plt.hist(repo_degrees)
+    plt.xlabel("Repository node degree")
+    plt.ylabel("Number of repository nodes")
+    plt.yscale("log")
+    plt.legend(["Graph size: 250 repos"])
+
+    # plot degree distribution for users
+    plt.figure()
+    plt.hist(user_degrees)
+    plt.xlabel("User node degree")
+    plt.ylabel("Numner of user nodes")
+    plt.yscale("log")
+    plt.legend(["Graph size: 3000 users"])
+    
+    plt.show()
+
+
 if __name__ == "__main__":
     # plot_performance_vs_random_walk_parameters()
     plot_performance_vs_top_k()
