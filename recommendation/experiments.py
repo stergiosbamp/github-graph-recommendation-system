@@ -55,6 +55,8 @@ if __name__ == "__main__":
     random.seed(0)
 
     G = build_bipartite_graph("../data/repos_users.json")
+    # G = build_bipartite_graph("../data/repos_users-6000.json")
+    # G = build_bipartite_graph("../data/repos_users-9000.json")
 
     # random_walk_parameters(G)
     top_k_experiment(G)
@@ -131,7 +133,7 @@ Recall: @ 30: 0.3235
 """
 
 """
-TOP-K
+TOP-K (3000)
 ------------
 
 Performance for top-k:  10
@@ -149,4 +151,43 @@ Recall: @ 30: 0.2930
 Performance for top-k:  40
 Precision @ 40: 0.0932
 Recall: @ 40: 0.3730
+
+TOP-K (6000)
+------------
+
+Performance for top-k:  10
+Precision @ 10: 0.1238
+Recall: @ 10: 0.1238
+
+Performance for top-k:  20
+Precision @ 20: 0.1129
+Recall: @ 20: 0.2258
+
+Performance for top-k:  30
+Precision @ 30: 0.0994
+Recall: @ 30: 0.2983
+
+Performance for top-k:  40
+Precision @ 40: 0.0941
+Recall: @ 40: 0.3765
+
+TOP-K (9000)
+------------
+
+Performance for top-k:  10
+Precision @ 10: 0.1243
+Recall: @ 10: 0.1243
+
+Performance for top-k:  20
+Precision @ 20: 0.1121
+Recall: @ 20: 0.2242
+
+Performance for top-k:  30
+Precision @ 30: 0.1016
+Recall: @ 30: 0.3048
+
+Performance for top-k:  40
+Precision @ 40: 0.0908
+Recall: @ 40: 0.3633
+
 """
