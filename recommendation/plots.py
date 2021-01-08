@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def plot_performance_vs_random_walk_parameters():
     # all number are for portion = 10, and users = 3000
 
@@ -47,5 +48,26 @@ def plot_performance_vs_random_walk_parameters():
     plt.show()
 
 
+def plot_performance_vs_top_k():
+    top_k_s = [10, 20, 30, 40]
+
+    precisions = [0.1138, 0.1037, 0.097, 0.0932]
+    recalls = [0.1138, 0.2073, 0.2930, 0.3730]
+
+    plt.figure()
+
+    plt.plot(top_k_s, precisions)  # precision
+    plt.plot(top_k_s, recalls)  # recall
+
+    plt.xlabel("Top-K queries")
+    plt.ylabel("Performance @ K")
+
+    plt.xticks(top_k_s)
+    plt.legend(["Precision for top-K", "Recall for top-K"])
+
+    plt.show()
+
+
 if __name__ == "__main__":
-    plot_performance_vs_random_walk_parameters()
+    # plot_performance_vs_random_walk_parameters()
+    plot_performance_vs_top_k()
