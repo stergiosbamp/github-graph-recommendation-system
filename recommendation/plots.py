@@ -11,20 +11,20 @@ def plot_performance_vs_random_walk_parameters():
     double_steps_per_random_walk = [1, 2, 3, 4]
 
     # pefrormance with 5 random walks per repo
-    prec_with_5_random_walks_per_repo = [0.0758, 0.0828, 0.0853, 0.0897]
-    rec_with_5_random_walks_per_repo = [0.2275, 0.2485, 0.2560, 0.2690]
+    prec_with_5_random_walks_per_repo = [0.0963, 0.1084, 0.1162, 0.1197]
+    rec_with_5_random_walks_per_repo = [0.2890, 0.3252, 0.3485, 0.3590]
 
     # pefrormance with 10 random walks per repo
-    prec_with_10_random_walks_per_repo = [0.0847, 0.0941, 0.0949, 0.0980]
-    rec_with_10_random_walks_per_repo = [0.2540, 0.2822, 0.2848, 0.2940]
+    prec_with_10_random_walks_per_repo = [0.1101, 0.1204, 0.1286, 0.1362]
+    rec_with_10_random_walks_per_repo = [0.3302, 0.3612, 0.3857, 0.4087]
 
     # pefrormance with 20 random walks per repo
-    prec_with_20_random_walks_per_repo = [0.0955, 0.0992, 0.1004, 0.1012]
-    rec_with_20_random_walks_per_repo = [0.2865, 0.2975, 0.3012, 0.3035]
+    prec_with_20_random_walks_per_repo = [0.1261, 0.1340, 0.1379, 0.1378]
+    rec_with_20_random_walks_per_repo = [0.3782, 0.4020, 0.4137, 0.4135]
 
     # pefrormance with 40 random walks per repo
-    prec_with_40_random_walks_per_repo = [0.1034, 0.1034, 0.1058, 0.1078]
-    rec_with_40_random_walks_per_repo = [0.3102, 0.3102, 0.3175, 0.3235]
+    prec_with_40_random_walks_per_repo = [0.1364, 0.1403, 0.1435, 0.1432]
+    rec_with_40_random_walks_per_repo = [0.4093, 0.4208, 0.4305, 0.4297]
 
     # plot precision
     fig = plt.figure()
