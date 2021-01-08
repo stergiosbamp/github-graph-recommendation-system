@@ -54,7 +54,7 @@ def top_k_experiment(G):
 if __name__ == "__main__":
     random.seed(0)
 
-    G = build_bipartite_graph("../data/repos_users.json")
+    G = build_bipartite_graph("../data/repos_users-3000.json")
     # G = build_bipartite_graph("../data/repos_users-6000.json")
     # G = build_bipartite_graph("../data/repos_users-9000.json")
 

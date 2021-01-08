@@ -85,10 +85,10 @@ def random_walks(G_reduced, target_user, random_walks_per_repo, double_steps_per
                 repo_visit_counts.update([repo_node])
                 if verbose:
                     print(f"{t}: {repo_node}")
-            
+
             if verbose:
                 print(f"The repo visit counts are {repo_visit_counts}")
-            
+
     return repo_visit_counts
 
 
@@ -129,7 +129,7 @@ def evaluate(G, target_user, portion, topk, random_walks_per_repo, double_steps_
 
 
 if __name__ == "__main__":
-    G = build_bipartite_graph("../data/repos_users.json")
+    G = build_bipartite_graph("../data/repos_users-3000.json")
 
     target_users = ["gaomingweig",
         "izdi",
