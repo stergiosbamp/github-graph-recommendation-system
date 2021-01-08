@@ -114,7 +114,14 @@ def evaluate(G, target_user, portion, topk, random_walks_per_repo, double_steps_
     removed_neighbors = remove_random_edges(G, target_user, portion=portion)
     repo_visit_counts = random_walks(G, target_user, random_walks_per_repo=random_walks_per_repo, double_steps_per_random_walk=double_steps_per_random_walk)
     add_edges(G, target_user, removed_neighbors)
-    topk_repos = [repo for repo, count in repo_visit_counts.most_common(topk)]
+    topk_repos = []
+    recommend_count = 0
+    for repo, count in repo_visit_counts.most_common():
+        if repo not in set(remaining_neighbors):
+            topk_repos.append(repo)
+            recommend_count += 1
+        if recommend_count == topk:
+            break
     correct = set(topk_repos).intersection(set(removed_neighbors))
     return len(correct)
 
