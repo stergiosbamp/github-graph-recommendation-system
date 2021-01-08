@@ -58,8 +58,8 @@ if __name__ == "__main__":
     # G = build_bipartite_graph("../data/repos_users-6000.json")
     # G = build_bipartite_graph("../data/repos_users-9000.json")
 
-    # random_walk_parameters(G)
-    top_k_experiment(G)
+    random_walk_parameters(G)
+    # top_k_experiment(G)
 
 """
 RANDOM WALKS AND DOUBLE STEPS
@@ -68,68 +68,68 @@ RANDOM WALKS AND DOUBLE STEPS
 For 3000 users graph size.
 
 Performance for random_walks_per_repo = 5 and double_steps_per_random_walk = 1
-Precision @ 30: 0.0758
-Recall: @ 30: 0.2275
+Precision @ 30: 0.0963
+Recall: @ 30: 0.2890
 
 Performance for random_walks_per_repo = 5 and double_steps_per_random_walk = 2
-Precision @ 30: 0.0828
-Recall: @ 30: 0.2485
+Precision @ 30: 0.1084
+Recall: @ 30: 0.3252
 
 Performance for random_walks_per_repo = 5 and double_steps_per_random_walk = 3
-Precision @ 30: 0.0853
-Recall: @ 30: 0.2560
+Precision @ 30: 0.1162
+Recall: @ 30: 0.3485
 
 Performance for random_walks_per_repo = 5 and double_steps_per_random_walk = 4
-Precision @ 30: 0.0897
-Recall: @ 30: 0.2690
+Precision @ 30: 0.1197
+Recall: @ 30: 0.3590
 
 Performance for random_walks_per_repo = 10 and double_steps_per_random_walk = 1
-Precision @ 30: 0.0847
-Recall: @ 30: 0.2540
+Precision @ 30: 0.1101
+Recall: @ 30: 0.3302
 
 Performance for random_walks_per_repo = 10 and double_steps_per_random_walk = 2
-Precision @ 30: 0.0941
-Recall: @ 30: 0.2822
+Precision @ 30: 0.1204
+Recall: @ 30: 0.3612
 
 Performance for random_walks_per_repo = 10 and double_steps_per_random_walk = 3
-Precision @ 30: 0.0949
-Recall: @ 30: 0.2848
+Precision @ 30: 0.1286
+Recall: @ 30: 0.3857
 
 Performance for random_walks_per_repo = 10 and double_steps_per_random_walk = 4
-Precision @ 30: 0.0980
-Recall: @ 30: 0.2940
+Precision @ 30: 0.1362
+Recall: @ 30: 0.4087
 
 Performance for random_walks_per_repo = 20 and double_steps_per_random_walk = 1
-Precision @ 30: 0.0955
-Recall: @ 30: 0.2865
+Precision @ 30: 0.1261
+Recall: @ 30: 0.3782
 
 Performance for random_walks_per_repo = 20 and double_steps_per_random_walk = 2
-Precision @ 30: 0.0992
-Recall: @ 30: 0.2975
+Precision @ 30: 0.1340
+Recall: @ 30: 0.4020
 
 Performance for random_walks_per_repo = 20 and double_steps_per_random_walk = 3
-Precision @ 30: 0.1004
-Recall: @ 30: 0.3012
+Precision @ 30: 0.1379
+Recall: @ 30: 0.4137
 
 Performance for random_walks_per_repo = 20 and double_steps_per_random_walk = 4
-Precision @ 30: 0.1012
-Recall: @ 30: 0.3035
+Precision @ 30: 0.1378
+Recall: @ 30: 0.4135
 
 Performance for random_walks_per_repo = 40 and double_steps_per_random_walk = 1
-Precision @ 30: 0.1034
-Recall: @ 30: 0.3102
+Precision @ 30: 0.1364
+Recall: @ 30: 0.4093
 
 Performance for random_walks_per_repo = 40 and double_steps_per_random_walk = 2
-Precision @ 30: 0.1034
-Recall: @ 30: 0.3102
+Precision @ 30: 0.1403
+Recall: @ 30: 0.4208
 
 Performance for random_walks_per_repo = 40 and double_steps_per_random_walk = 3
-Precision @ 30: 0.1058
-Recall: @ 30: 0.3175
+Precision @ 30: 0.1435
+Recall: @ 30: 0.4305
 
 Performance for random_walks_per_repo = 40 and double_steps_per_random_walk = 4
-Precision @ 30: 0.1078
-Recall: @ 30: 0.3235
+Precision @ 30: 0.1432
+Recall: @ 30: 0.4297
 """
 
 """
