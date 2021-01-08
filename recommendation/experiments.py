@@ -58,8 +58,8 @@ if __name__ == "__main__":
     # G = build_bipartite_graph("../data/repos_users-6000.json")
     # G = build_bipartite_graph("../data/repos_users-9000.json")
 
-    random_walk_parameters(G)
-    # top_k_experiment(G)
+    # random_walk_parameters(G)
+    top_k_experiment(G)
 
 """
 RANDOM WALKS AND DOUBLE STEPS
@@ -137,57 +137,57 @@ TOP-K (3000)
 ------------
 
 Performance for top-k:  10
-Precision @ 10: 0.1183
-Recall: @ 10: 0.1183
+Precision @ 10: 0.1890
+Recall: @ 10: 0.1890
 
 Performance for top-k:  20
-Precision @ 20: 0.1037
-Recall: @ 20: 0.2073
+Precision @ 20: 0.1547
+Recall: @ 20: 0.3093
 
 Performance for top-k:  30
-Precision @ 30: 0.0977
-Recall: @ 30: 0.2930
+Precision @ 30: 0.1323
+Recall: @ 30: 0.3970
 
 Performance for top-k:  40
-Precision @ 40: 0.0932
-Recall: @ 40: 0.3730
+Precision @ 40: 0.1191
+Recall: @ 40: 0.4765
 
 TOP-K (6000)
 ------------
 
 Performance for top-k:  10
-Precision @ 10: 0.1238
-Recall: @ 10: 0.1238
+Precision @ 10: 0.1620
+Recall: @ 10: 0.1620
 
 Performance for top-k:  20
-Precision @ 20: 0.1129
-Recall: @ 20: 0.2258
+Precision @ 20: 0.1413
+Recall: @ 20: 0.2827
 
 Performance for top-k:  30
-Precision @ 30: 0.0994
-Recall: @ 30: 0.2983
+Precision @ 30: 0.1227
+Recall: @ 30: 0.3682
 
 Performance for top-k:  40
-Precision @ 40: 0.0941
-Recall: @ 40: 0.3765
+Precision @ 40: 0.1128
+Recall: @ 40: 0.4510
 
 TOP-K (9000)
 ------------
 
 Performance for top-k:  10
-Precision @ 10: 0.1243
-Recall: @ 10: 0.1243
+Precision @ 10: 0.1550
+Recall: @ 10: 0.1550
 
 Performance for top-k:  20
-Precision @ 20: 0.1121
-Recall: @ 20: 0.2242
+Precision @ 20: 0.1345
+Recall: @ 20: 0.2690
 
 Performance for top-k:  30
-Precision @ 30: 0.1016
-Recall: @ 30: 0.3048
+Precision @ 30: 0.1173
+Recall: @ 30: 0.3518
 
 Performance for top-k:  40
-Precision @ 40: 0.0908
-Recall: @ 40: 0.3633
+Precision @ 40: 0.1048
+Recall: @ 40: 0.4192
 
 """
