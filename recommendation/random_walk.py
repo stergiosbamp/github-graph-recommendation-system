@@ -93,13 +93,14 @@ def random_walks(G_reduced, target_user, random_walks_per_repo, double_steps_per
 
 
 def remove_random_edges(G, target_user, portion=10):
-    neighbors = list(G.neighbors(target_user))
-    neighbors_to_remove = sample(neighbors, k=portion)
+    neighbors = set(G.neighbors(target_user))
+    removed_neighbors = sample(neighbors, k=portion)
+    remaining_neighbors = neighbors.difference(set(removed_neighbors))
 
-    for neighbor in neighbors_to_remove:
+    for neighbor in removed_neighbors:
         G.remove_edge(target_user, neighbor)
 
-    return neighbors_to_remove
+    return removed_neighbors, remaining_neighbors
 
 
 def add_edges(G, target_user, edges):
@@ -111,7 +112,7 @@ def add_edges(G, target_user, edges):
 
 
 def evaluate(G, target_user, portion, topk, random_walks_per_repo, double_steps_per_random_walk):
-    removed_neighbors = remove_random_edges(G, target_user, portion=portion)
+    removed_neighbors, remaining_neighbors = remove_random_edges(G, target_user, portion=portion)
     repo_visit_counts = random_walks(G, target_user, random_walks_per_repo=random_walks_per_repo, double_steps_per_random_walk=double_steps_per_random_walk)
     add_edges(G, target_user, removed_neighbors)
     topk_repos = []
