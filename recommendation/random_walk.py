@@ -128,21 +128,26 @@ def evaluate(G, target_user, portion, topk, random_walks_per_repo, double_steps_
     return len(correct)
 
 
+def recommend(G, target_user, topk, random_walks_per_repo=10, double_steps_per_random_walk=4):
+    repo_visit_counts = random_walks(G, target_user, random_walks_per_repo=random_walks_per_repo, double_steps_per_random_walk=double_steps_per_random_walk)
+    topk_repos = []
+    recommend_count = 0
+    starred_repos = list(G.neighbors(target_user))
+    for repo, count in repo_visit_counts.most_common():
+        if repo not in starred_repos:
+            topk_repos.append(repo)
+            recommend_count += 1
+        if recommend_count == topk:
+            break
+
+    print("For GitHub user: {}, "
+          "\n\tthe top-{} recommended repositories are {}".format(target_user, topk, topk_repos))
+
+
 if __name__ == "__main__":
     G = build_bipartite_graph("../data/repos_users-3000.json")
 
-    target_users = ["gaomingweig",
-        "izdi",
-        "data-catalysis",
-        "compassz",
-        "michalwols"]
+    target_users = ["fly51fly", "gaomingweig", "izdi", "data-catalysis"]
 
-    portion = 10
-    topk = 30
-
-    n_correct = 0
-    for user in target_users:
-        n_correct += evaluate(G, user, portion=portion, topk=topk, random_walks_per_repo=40, double_steps_per_random_walk=4)
-
-    print(f"\n\nPrecision @ {topk}: {n_correct / (topk * len(target_users)):.3f}")
-    print(f"Recall: @ {topk}: {n_correct/ (portion * len(target_users)):.3f}")
+    for stargazer in target_users:
+        recommend(G, stargazer, topk=10)
