@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
+from random_walk import build_bipartite_graph
+
 
 def plot_performance_vs_random_walk_parameters():
     # all number are for portion = 10, and users = 3000
@@ -70,7 +72,7 @@ def plot_performance_vs_top_k():
     plt.xlabel("Top-K queries")
     plt.ylabel("Precision @ K")
     plt.xticks(top_k_s)
-    plt.legend(["3000 stargazers", "6000 stargazers", "9000 stargazers"])
+    plt.legend(["Graph size: 3000 stargazers", "Graph size: 6000 stargazers", "Graph size: 9000 stargazers"])
 
     # Recall plot for all three graphs
     plt.figure()
@@ -81,7 +83,7 @@ def plot_performance_vs_top_k():
     plt.xlabel("Top-K queries")
     plt.ylabel("Recall @ K")
     plt.xticks(top_k_s)
-    plt.legend(["3000 stargazers", "6000 stargazers", "9000 stargazers"])
+    plt.legend(["Graph size: 3000 stargazers", "Graph size: 6000 stargazers", "Graph size: 9000 stargazers"])
 
     plt.show()
 
@@ -106,11 +108,14 @@ def plot_degree_distribution(G):
     plt.xlabel("User node degree")
     plt.ylabel("Numner of user nodes")
     plt.yscale("log")
-    plt.legend(["Graph size: 3000 users"])
+    plt.legend(["Graph size: 3000 stargazers"])
 
     plt.show()
 
 
 if __name__ == "__main__":
+    G = build_bipartite_graph("../data/repos_users-3000.json")
+
     # plot_performance_vs_random_walk_parameters()
+    # plot_degree_distribution(G)
     plot_performance_vs_top_k()
