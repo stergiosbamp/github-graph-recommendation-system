@@ -4,6 +4,7 @@ import pathlib
 from collections import Counter
 
 
+STARGAZERS = 3000
 all_users = Counter()
 repo_users_mapping = dict()
 filtered_users_repos = dict()
@@ -26,7 +27,7 @@ for repo in path.iterdir():
     all_users.update(users)
 
 # Take the top-3000 users with the highest number of stars
-most_common_users = all_users.most_common(3000)
+most_common_users = all_users.most_common(STARGAZERS)
 
 # Get the top users based on their stars
 top_users = []
@@ -42,5 +43,5 @@ for repo, users in repo_users_mapping.items():
 
 
 # Write the unified json collection to file
-with open("repos_users.json", "w") as f:
+with open("repos_users-{}.json".format(STARGAZERS), "w") as f:
     json.dump(filtered_users_repos, f, indent=4)

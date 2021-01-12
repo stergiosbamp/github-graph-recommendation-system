@@ -21,4 +21,5 @@ __pycache__
 
 # Dataset files
 data/stargazers/
-data/repos_users.json
+data/repos_users-*.json
+
