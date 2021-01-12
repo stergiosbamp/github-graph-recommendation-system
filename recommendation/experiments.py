@@ -5,6 +5,14 @@ from random_walk import *
 
 
 def random_walk_parameters(G):
+    """
+    Function to evaluate the effect of some selected random_walks_per_repo and double_steps_per_random_walk parameters
+    based on the precision and recall of the recommendations for a randomly selected portion of users (600)
+
+    Args:
+        - G (networkx graph): The graph for which to evaluate the performance
+
+    """
     repos, users = nx.bipartite.sets(G)
     users = list(users)
     target_users = random.sample(users, 600)
@@ -27,6 +35,14 @@ def random_walk_parameters(G):
 
     
 def top_k_experiment(G):
+    """
+    Function to evaluate the effect of some number of top-k recommended items based on the precision and recall of the recommendations
+    for a randomly selected portion of users (600)
+
+    Args:
+        - G (networkx graph): The graph for which to evaluate the performance
+
+    """
     repos, users = nx.bipartite.sets(G)
     users = list(users)
     target_users = random.sample(users, 600)
