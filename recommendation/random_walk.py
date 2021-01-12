@@ -7,6 +7,15 @@ from random import choice, sample
 
 
 def build_bipartite_graph(filename):
+    """
+    Function that reads the final data collection and builds an networkx
+    bipartipe graph between repositories and stargazers.
+
+    Args:
+        - filename (str): The file to read
+    Returns:
+        The networkx graph
+    """
     print(f"\nBuilding graph...")
 
     with open(filename, "r") as f:
@@ -35,6 +44,12 @@ def build_bipartite_graph(filename):
 
 
 def print_graph_stats(G):
+    """
+    Function that prints various graph metrics.
+
+    Args:
+        - G (networkx graph): The graph for which to print metrics
+    """
     # graph metrics
     print(f"Average clustering coefficient: {nx.average_clustering(G)}")
     print(f"Transitivity: {nx.transitivity(G)}")
@@ -60,12 +75,38 @@ def print_graph_stats(G):
 
 
 def random_neighbor(G, node):
+    """
+    Function thar randomly selects a neighbor of a node.
+
+    Args:
+        - G (networkx graph): The graph where the node belong
+        - node (str): The node for which to choose a random neighbor
+
+    Returns:
+        node (str): The randomly selected node
+
+    """
     neighbors = list(G.neighbors(node))
     randomly_selected_neighbor = choice(neighbors)
     return randomly_selected_neighbor
 
 
 def random_walks(G_reduced, target_user, random_walks_per_repo, double_steps_per_random_walk, verbose=False):
+    """
+    Function that given a target user gets the seed repositories of the user, conducts random walks for each repository
+    and returns the aggregated repository visit counts
+
+    Args:
+        - G_reduced (networkx graph): The graph on which random walks will run
+        - target_user (str): The user for whom to conduct the random walks
+        - random_walks_per_repo (int): The number of random walks to conduct for each repository of the target user
+        - double_steps_per_random_walk (int): The number of double hops to conduct for each random walk
+        - verbose (bool): Whether to print informative messages
+
+    Returns:
+        (dict): The dict that holds the repository aggregated visit counts from the random walk
+
+    """
     seed_repos = list(G_reduced.neighbors(target_user))
     #print(f"\n\n\nStarting random walks for target user: {target_user}")
 
@@ -93,6 +134,18 @@ def random_walks(G_reduced, target_user, random_walks_per_repo, double_steps_per
 
 
 def remove_random_edges(G, target_user, portion=10):
+    """
+    Function that randomly removes edges for given target users
+
+    Args:
+        - G (networkx graph): The graph where the target user belongs
+        - target_user (str): The user for whom to remove edges
+        - portion (int): The number of edges to be removed
+
+    Returns:
+        (list, list): The list of the removed neighbors and the list of the remaining neighbors
+
+    """
     neighbors = set(G.neighbors(target_user))
     removed_neighbors = sample(neighbors, k=portion)
     remaining_neighbors = neighbors.difference(set(removed_neighbors))
@@ -105,6 +158,14 @@ def remove_random_edges(G, target_user, portion=10):
 
 
 def add_edges(G, target_user, edges):
+    """
+    Function to add back to the graph the removed edges of the target user
+
+    Args:
+        - G (networkx graph): The graph where the target user belongs
+        - target_user (str): The user for whom to add back edges
+        - edges (List[str]): The nodes of the edges that should be added
+    """
     edges_to_add = []
     for edge in edges:
         edges_to_add.append((target_user, edge))
@@ -113,6 +174,21 @@ def add_edges(G, target_user, edges):
 
 
 def evaluate(G, target_user, portion, topk, random_walks_per_repo, double_steps_per_random_walk):
+    """
+    Function that given a target user and corresponding recommendation parameters, returns the number
+    of repos that are founded in the initially removed repo edges.
+
+    Args:
+        - G (networkx graph): The graph where the target user belongs
+        - target_user (str): The user for whom to evaluate the recommendation
+        - portion (int): The number of edges to be removed
+        - topk: The number of repositories to recommend
+        - random_walks_per_repo (int): The number of random walks to conduct for each repository of the target user
+        - double_steps_per_random_walk (int): The number of double hops to conduct for each random walk
+
+    Returns:
+        The number of recommended repos that are also found in the initially removed repo edges
+    """
     removed_neighbors, remaining_neighbors = remove_random_edges(G, target_user, portion=portion)
     repo_visit_counts = random_walks(G, target_user, random_walks_per_repo=random_walks_per_repo, double_steps_per_random_walk=double_steps_per_random_walk)
     add_edges(G, target_user, removed_neighbors)
@@ -129,6 +205,19 @@ def evaluate(G, target_user, portion, topk, random_walks_per_repo, double_steps_
 
 
 def recommend(G, target_user, topk, random_walks_per_repo=10, double_steps_per_random_walk=4):
+    """
+    Function that actually performs the recommendation task
+    For a target user using the random walk algorithm recommends the requested number
+    of repos that the user hasn't starred already
+
+    Args:
+        - G (networkx graph): The graph where the target user belongs
+        - target_user (str): The user for whom to evaluate the recommendation
+        - topk: The number of repositories to recommend
+        - random_walks_per_repo (int): The number of random walks to conduct for each repository of the target user
+        - double_steps_per_random_walk (int): The number of double hops to conduct for each random walk
+
+    """
     repo_visit_counts = random_walks(G, target_user, random_walks_per_repo=random_walks_per_repo, double_steps_per_random_walk=double_steps_per_random_walk)
     topk_repos = []
     recommend_count = 0
