@@ -4,6 +4,7 @@ import pathlib
 from collections import Counter
 
 
+# The number of users to keep based on their given stars to 250 seed repositories
 STARGAZERS = 3000
 all_users = Counter()
 repo_users_mapping = dict()
@@ -23,7 +24,9 @@ for repo in path.iterdir():
     repository_name = repo.stem.replace("--", "/")
     # take just username
     users = [user['login'] for user in stargazers]
+    # Populate dict with key the repo name and value it's stargazers
     repo_users_mapping[repository_name] = users
+    # Update the counter which holds all the users appearances
     all_users.update(users)
 
 # Take the top-3000 users with the highest number of stars
