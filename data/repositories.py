@@ -22,7 +22,8 @@ headers = {
     "Authorization": "Bearer {}".format(TOKEN)
 }
 
-items = []
+# List to hold all the final repositories (total 250)
+repositories = []
 for page in range(1, 4):
     params = {
         "per_page": "100",
@@ -33,13 +34,14 @@ for page in range(1, 4):
     data = json.loads(response.text)
 
     for item in data['items']:
+        # Keep only id, full_name, stargazers_count from the object attributes
         filtered_data = dict()
         filtered_data['id'] = item['id']
         filtered_data['full_name'] = item['full_name']
         filtered_data['stargazers_count'] = item['stargazers_count']
 
-        items.append(filtered_data)
+        repositories.append(filtered_data)
 
-
+# Save the list of the repositories in json file
 with open("repos.json", "w") as fp:
-    json.dump(items, fp, indent=4)
+    json.dump(repositories, fp, indent=4)
