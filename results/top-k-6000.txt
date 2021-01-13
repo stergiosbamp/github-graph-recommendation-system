@@ -1,0 +1,15 @@
+Performance for top-k:  10
+Precision @ 10: 0.1620
+Recall: @ 10: 0.1620
+
+Performance for top-k:  20
+Precision @ 20: 0.1413
+Recall: @ 20: 0.2827
+
+Performance for top-k:  30
+Precision @ 30: 0.1227
+Recall: @ 30: 0.3682
+
+Performance for top-k:  40
+Precision @ 40: 0.1128
+Recall: @ 40: 0.4510
