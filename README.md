@@ -36,7 +36,8 @@ $ pip install -r requirements.txt
 ## Architecture
 
 The overall architecture of the recommendation system is shown below:
-![Recommendation System architecture](assets/Recommendation system architecture.png)
+
+<img src="assets/recommendation-system-architecture.png" width="400" height="600" />
 
 ## Dataset
 For the constructed dataset we utilize the GitHub's API to gather users that have a given a star (stargazers)
