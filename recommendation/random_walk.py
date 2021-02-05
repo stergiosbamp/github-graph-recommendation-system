@@ -43,6 +43,20 @@ def build_bipartite_graph(filename):
     return G
 
 
+def save_graph_for_gephi(G, path):
+    """
+    Function that saves a graph as .gexf file in compatible format
+    with Gephi visualization tool
+
+    Args:
+        - G (networkx graph): The graph
+        - path (str): The path where to save the .gexf file
+    """
+
+    nx.write_gexf(G, path)
+    print("Saved graph in Gephi compatible format")
+
+
 def print_graph_stats(G):
     """
     Function that prints various graph metrics.
@@ -235,6 +249,8 @@ def recommend(G, target_user, topk, random_walks_per_repo=10, double_steps_per_r
 
 if __name__ == "__main__":
     G = build_bipartite_graph("../data/repos_users-3000.json")
+
+    save_graph_for_gephi(G, "../data/github-bipartite.gexf")
 
     target_users = ["fly51fly", "gaomingweig", "izdi", "data-catalysis"]
 

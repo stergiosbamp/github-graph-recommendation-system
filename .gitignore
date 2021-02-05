@@ -22,4 +22,5 @@ __pycache__
 # Dataset files
 data/stargazers/
 data/repos_users-*.json
-
+# Gephi's compatible graph files
+data/*.gexf
