@@ -1,16 +1,9 @@
-# A graph-based Github recommendation system
-This is repository for the "Social Network Analysis" course's project.
+# A graph-based Github recommendation system for machine learning repositories
 
 ## Task
 Implement a graph-based recommendation system for GitHub. Particularly we
 recommend repositories for a target user that he may find useful or even want to contribute to, by
 utilizing his previous starred repositories.
-
-Contributors:
-
-* Stergios Bampakis
-* Themis Spanoudis
-* Takis Kavargyris
 
 ## Project setup
 
